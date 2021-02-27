@@ -12,8 +12,7 @@ SPA에서 다른 주소에 다른 화면이 보이도록 만들어준다.
     - page.jsx
     - setting.jsx
 
-1. index.js
-   Router를 사용하고 싶은 컴포넌트를 BrowserRouter로 감싼다.
+1. index.js : Router를 사용하고 싶은 컴포넌트를 BrowserRouter로 감싼다.
 
 ```
 ReactDOM.render(
@@ -24,8 +23,7 @@ ReactDOM.render(
 );
 ```
 
-2. app.js
-   Route로 경로를 지정하여 준다.
+2. app.js : Route로 경로를 지정하여 준다.
 
 - component
 
@@ -157,23 +155,20 @@ const Home = ({match, location, history}) => {
 export default Home;
 ```
 
-1. match  
-   path와 URL이 매칭된 대한 정보가 담겨져있다.
+1. match : path와 URL이 매칭된 대한 정보가 담겨져있다.
 
 - path : 라우터에 정의된 path
 - url : 실제 클라이언트로부터 요청된 url path
 - isExact : true일 경우, 전체 경로가 완전히 매칭될 경우에만 요청을 수행
 - params : url path로 전달된 파라미터 객체
 
-2. location  
-   location 객체에는 현재 페이지의 정보를 가지고 있다.
+2. location : location 객체에는 현재 페이지의 정보를 가지고 있다.
 
 - pathname : 현재 페이지의 경로명
 - search : 현재 페이지의 query
 - hash : 현재 페이지의 hash
 
-3. history  
-   현재까지 이동한 url 경로들이 담겨있는 형태로, 주소를 임의로 변경하거나 되돌아갈 수 있도록 해준다.
+3. history : 현재까지 이동한 url 경로들이 담겨있는 형태로, 주소를 임의로 변경하거나 되돌아갈 수 있도록 해준다.
 
 - length : 전체 history 스택의 길이
 - action : 최근에 수행된 action
