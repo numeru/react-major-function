@@ -11,8 +11,9 @@
 - app.jsx
   - counter.jsx
 
-1. store
-   Context API 생성.
+1. store.jsx
+
+- Context API 생성.
 
 ```
 // Context Instance
@@ -37,8 +38,9 @@ export const AppProvider = ({ children }) => {
 export const useAppContext = () => useContext(AppContext);
 ```
 
-2. app
-   Context API가 사용되어질 곳을 Provider로 감싼다.
+2. app.jsx
+
+- Context API가 사용되어질 곳을 Provider로 감싼다.
 
 ```
 const App = () => {
@@ -52,8 +54,9 @@ const App = () => {
 export default App;
 ```
 
-3. counter
-   Context API를사용하는 곳에서 Consumer를 호출한다.
+3. counter.jsx
+
+- Context API를사용하는 곳에서 Consumer를 호출한다.
 
 ```
 const Counter = () => {
